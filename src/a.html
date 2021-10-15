@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = [
+        {
+          agent: "Jett",
+          gender: "Female",
+          image: "jettImage",
+          ability: [
+            {
+              abilityid: "E",
+              abilityname: "Dash",
+              icon: "DashIcon",
+              cost: "200",
+              description: "aaabbbb",
+            },
+            {
+              abilityid: "Ultimate",
+              abilityname: "Knife",
+              icon: "KnifeIcon",
+              cost: "1000",
+              description: "aaabbbb",
+            },
+          ],
+        },
+        {
+          agent: "Sage",
+          gender: "Female",
+          image: "sageImage",
+          ability: [
+            {
+              abilityid: "E",
+              abilityname: "Heal",
+              icon: "HealIcon",
+              cost: "300",
+              description: "aaabbbb",
+            },
+            {
+              abilityid: "Ultimate",
+              abilityname: "Rez",
+              icon: "rez",
+              cost: "900",
+              description: "aaabbbbccc",
+            },
+          ],
+        },
+      ];
+
+      agentfinder = (agentNameGiven) => {
+        c = a.forEach((ele) => {
+          if (ele.agent == agentNameGiven) {
+            console.log(ele);
+            return ele;
+          }
+        });
+        console.log(c)
+      }
+
+      var displayAgent = agentfinder("Jett");
+      console.log(displayAgent);
+    </script>
+  </body>
+</html>

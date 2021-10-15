@@ -1,0 +1,20 @@
+{
+  "name": "websitetemplate",
+  "version": "1.0.0",
+  "description": "website template",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss tailwind.css -o src/style/tailwindstyle.css",
+    "tailwind:css": "tailwind build tailwind.css -o src/style/tailwindstyle.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AritroSinha",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.6.2"
+  }
+}
